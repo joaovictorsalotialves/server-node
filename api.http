@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Novo evento",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/2385c829-29fb-4132-ab3d-052ae6bb2423/attendees
+Content-Type: application/json
+
+{
+    "name": "João Victor",
+    "email": "joaovictorsalotialves@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/2385c829-29fb-4132-ab3d-052ae6bb2423
+
+### 
+
+GET http://localhost:3333/attendees/1/badge
+
+### 
+
+GET http://localhost:3333/attendees/1/check-in
+
+###
+
+GET http://localhost:3333/events/2385c829-29fb-4132-ab3d-052ae6bb2423/attendees
